@@ -1,0 +1,20 @@
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 8px solid rgba(0, 0, 0, 0);
+  border-top-color: var(--secondary-text-color);
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "github-repo-viewer",
+  "homepage": "https://akmatoff.github.io/github-repo-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@reduxjs/toolkit": "1.6.2",
+    "@types/node": "16.11.10",
+    "axios": "0.24.0",
+    "dotenv": "10.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "4.3.1",
+    "react-redux": "7.2.6",
+    "react-scripts": "4.0.3",
+    "redux-saga": "1.1.3"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.20",
+    "@types/react-dom": "17.0.9",
+    "gh-pages": "^3.2.3",
+    "typescript": "4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

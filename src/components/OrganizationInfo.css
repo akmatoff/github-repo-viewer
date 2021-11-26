@@ -1,0 +1,21 @@
+.organization-info {
+  background-color: var(--secondary-color);
+  width: clamp(360px, 50vw, 600px);
+  height: 80px;
+  padding: 22px;
+  border-radius: 15px;
+  margin-bottom: -20px;
+}
+
+.organization-info-inner {
+  width: clamp(110px, 50vw, 210px);
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}

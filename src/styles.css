@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary-color: #18181a;
+  --secondary-color: #242427;
+  --highlight-color: #27272a;
+  --text-color: #bcbbcc;
+  --secondary-text-color: #6d6c79;
+}
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 25px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.main {
+  width: 60%;
+  min-height: 500px;
+}
+
+.header-text {
+  text-align: center;
+  letter-spacing: 7px;
+  font-weight: lighter;
+  font-size: clamp(10px, 2vw, 20px);
+  margin: 50px 0;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: var(--text-color);
+  }
+  40% {
+    color: var(--text-color);
+  }
+  40.2% {
+    color: var(--secondary-text-color);
+  }
+  60% {
+    color: var(--secondary-text-color);
+  }
+  60.2% {
+    color: var(--text-color);
+  }
+}
