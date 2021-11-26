@@ -20,3 +20,5 @@ This app is build using
 to show some front-end skills.
 
 ### Use npm start to run the app
+
+### View demo [here](https://akmatoff.github.io/github-repo-viewer/)
