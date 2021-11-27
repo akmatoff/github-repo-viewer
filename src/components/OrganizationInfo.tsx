@@ -12,6 +12,7 @@ export default function OrganizationInfo() {
 
   if (repos.length !== 0 && !isLoading) {
     return (
+      <a href={repos[0].owner.html_url}>
       <div className="organization-info container flex-row">
         <div className="organization-info-inner flex-row">
           <div className="avatar-container">
@@ -24,6 +25,7 @@ export default function OrganizationInfo() {
           <div className="organization-name">{repos[0].owner.login}</div>
         </div>
       </div>
+      </a>
     );
   } else {
     return null;

@@ -2,9 +2,7 @@
   background-color: var(--secondary-color);
   width: clamp(360px, 50vw, 600px);
   height: 80px;
-  padding: 22px;
   border-radius: 15px;
-  margin-bottom: -20px;
 }
 
 .organization-info-inner {
