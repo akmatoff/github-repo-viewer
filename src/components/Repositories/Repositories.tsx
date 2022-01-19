@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../redux-saga/store";
+import { RootState } from "../../redux-saga/store";
 import { useEffect, useState } from "react";
 
 import Repository from "./Repository";
-import LoadingSpinner from "./LoadingSpinner";
-import Error from "../helpers/Error";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+import Error from "../../helpers/Error";
 
 import "./Repositories.css";
 

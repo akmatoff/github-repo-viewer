@@ -2,8 +2,8 @@ import { ChangeEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { BiSearch } from "react-icons/all";
 
-import { AppDispatch } from "../redux-saga/store";
-import { fetchDataRequest } from "../redux-saga/repoSlice";
+import { AppDispatch } from "../../redux-saga/store";
+import { fetchDataRequest } from "../../redux-saga/repoSlice";
 
 import "./SearchBar.css";
 

@@ -1,9 +1,9 @@
 import { Provider } from "react-redux";
 import * as dotenv from "dotenv";
 
-import OrganizationInfo from "./components/OrganizationInfo";
-import SearchBar from "./components/SearchBar";
-import Repositories from "./components/Repositories";
+import OrganizationInfo from "./components/Organization/OrganizationInfo";
+import SearchBar from "./components/Search/SearchBar";
+import Repositories from "./components/Repositories/Repositories";
 
 import store from "./redux-saga/store";
 
