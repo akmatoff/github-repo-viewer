@@ -1,13 +1,13 @@
 import { GoRepoForked, AiOutlineEye, AiOutlineStar } from "react-icons/all";
 
-import { IRepoModel } from "../helpers/types";
+import { IRepoModel } from "../../helpers/types";
 
 export default function Repository({
   title,
   url,
   forksCount,
   watchersCount,
-  starsCount
+  starsCount,
 }: IRepoModel) {
   return (
     <a href={url}>

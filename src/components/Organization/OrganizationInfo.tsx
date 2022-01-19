@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../redux-saga/store";
+import { RootState } from "../../redux-saga/store";
 
 import "./OrganizationInfo.css";
 
@@ -13,18 +13,18 @@ export default function OrganizationInfo() {
   if (repos.length !== 0 && !isLoading) {
     return (
       <a href={repos[0].owner.html_url}>
-      <div className="organization-info container flex-row">
-        <div className="organization-info-inner flex-row">
-          <div className="avatar-container">
-            <img
-              className="avatar"
-              src={repos[0].owner.avatar_url}
-              alt="avatar"
-            />
+        <div className="organization-info container flex-row">
+          <div className="organization-info-inner flex-row">
+            <div className="avatar-container">
+              <img
+                className="avatar"
+                src={repos[0].owner.avatar_url}
+                alt="avatar"
+              />
+            </div>
+            <div className="organization-name">{repos[0].owner.login}</div>
           </div>
-          <div className="organization-name">{repos[0].owner.login}</div>
         </div>
-      </div>
       </a>
     );
   } else {

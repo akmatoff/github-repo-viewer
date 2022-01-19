@@ -4,6 +4,7 @@ import * as dotenv from "dotenv";
 import OrganizationInfo from "./components/Organization/OrganizationInfo";
 import SearchBar from "./components/Search/SearchBar";
 import Repositories from "./components/Repositories/Repositories";
+import Footer from "./components/Footer/Footer";
 
 import store from "./redux-saga/store";
 
@@ -21,6 +22,7 @@ export default function App() {
           <OrganizationInfo />
           <Repositories />
         </div>
+        <Footer />
       </div>
     </Provider>
   );
